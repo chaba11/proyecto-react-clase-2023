@@ -1,15 +1,12 @@
-const FilaProducto = ({ producto }) => {
-    const name = product.stocked ?
-        product.name :
-        <span style={{ color: 'red' }}>
-            {product.name}
-        </span>;
-    return (
-        <tr>
-            <td>{name}</td>
-            <td>{product.price}</td>
-        </tr>
-    );
+import React from 'react';
+
+function Componente({ condicion }) {
+  return (
+    <div>
+      {condicion || <p>Contenido del componente</p>}
+    </div>
+  );
 }
 
-export { FilaProducto }
+export { Componente };
+
